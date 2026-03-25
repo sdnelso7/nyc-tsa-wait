@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: nyc-tsa-wait
+Version: 0.1.0
+Summary: CLI to show TSA security wait times at JFK, LGA, and EWR
+Requires-Python: >=3.9
+Requires-Dist: httpx>=0.27
+Requires-Dist: rich>=13

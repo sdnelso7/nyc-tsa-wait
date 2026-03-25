@@ -1,0 +1,2 @@
+[console_scripts]
+tsa-wait = nyc_tsa_wait.cli:main
