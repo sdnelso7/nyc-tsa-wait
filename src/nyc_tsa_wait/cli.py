@@ -22,10 +22,10 @@ def _wait_color(minutes: int, queue_open: bool, available: bool) -> str:
 
 
 def _fmt_wait(minutes: int, status: str, queue_open: bool, available: bool) -> str:
-    if not queue_open:
-        return "[dim]Closed[/dim]"
     if not available or status.upper() in ("N/A", "-", ""):
         return "[dim]N/A[/dim]"
+    if not queue_open:
+        return "[dim]Closed[/dim]"
     color = _wait_color(minutes, queue_open, available)
     label = f"{minutes} min" if minutes else "< 1 min"
     return f"[{color}]{label}[/{color}]"
