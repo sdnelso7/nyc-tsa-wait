@@ -43,3 +43,7 @@ Wait times are color-coded: green (≤10 min), yellow (≤20 min), red (>20 min)
 ## Data source
 
 Data comes from the Port Authority of New York & New Jersey's backend, the same source used by [jfkairport.com](https://www.jfkairport.com), [laguardiaairport.com](https://www.laguardiaairport.com), and [newarkairport.com](https://www.newarkairport.com). Updated every few minutes.
+
+## Current status
+
+As of March 2026, the Port Authority has suspended wait time reporting for JFK, LGA, and EWR. The tool will show `N/A` for all checkpoints until reporting is restored. This affects all third-party trackers using the same source — it's an upstream issue, not a bug in this package.
